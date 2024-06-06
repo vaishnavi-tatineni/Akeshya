@@ -1,0 +1,53 @@
+---
+import Header from "../components/Header.astro";
+import Home from "../components/Home.astro";
+import Clients from "../components/Clients.astro";
+import AboutUs from "../components/AboutUs.astro";
+import Counts from "../components/Counts.astro";
+import Services from "../components/Services.astro";
+import Features from "../components/Features.astro";
+import Contact from "../components/Contact.astro";
+import Footer from "../components/Footer.astro";
+import "aos/dist/aos.css";
+---
+
+<html>
+  <head>
+    <title>Akeshya</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" onload="AOS.init()"
+    ></script>
+  </head><body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+    <script>
+      import { aosInit } from "../js/aos";
+      aosInit();
+    </script>
+    <Header />
+    <Home />
+    <Clients />
+    <AboutUs />
+    <Counts />
+    <Services />
+    <Features />
+    <Contact />
+    <Footer />
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center active"
+      ><i class="bi bi-arrow-up-short"></i></a
+    >
+  </body>
+</html>
